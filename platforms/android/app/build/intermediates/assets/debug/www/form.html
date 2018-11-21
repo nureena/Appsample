@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>list bar</title>
+
+
+
+        <!-- <link rel="stylesheet" href="css/list.css"> -->
+        <link rel="stylesheet" href="css/form.css">
+
+
+
+    </head>
+
+    <body>
+
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+            <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'> -->
+        </head>
+
+        <div class="site-container">
+            <div class="site-pusher">
+
+                <header class="header">
+
+                    <a href="#" class="header__icon" id="header__icon"></a>
+                    <a href="#" class="header__logo">Form</a>
+
+                    <nav class="menu">
+                        <a href="home.html">Home</a>
+                        <a href="#">About</a>
+                        <!-- <a href="#">Search</a> -->
+                        <a href="index.html">logout</a>
+                    </nav>
+
+                </header>
+                <div class="container">
+                        <div class="wrapper">
+                            <!-- <div class="company-info">
+                                <h3>Reservation Form</h3>
+                            </div> -->
+                            <div class="contact">
+                                <form method="POST">
+                                    <p>
+                                        <label>Student ID</label>
+                                        <input type="number" name="std-id" placeholder="student id..">
+                                    </p>
+                                    <p>
+                                        <label>Room</label>
+            
+                                        <!-- <input type="radio" name="room" value="0407">BSc0407
+                                        <input type="radio" name="room" value="0408">BSc0408
+                                        <input type="radio" name="room" value="0409">BSc0409
+                                        <input type="radio" name="room" value="0502">BSc0502
+                                        <input type="radio" name="room" value="0503/2">BSc0503/2 -->
+                                        <select>
+                                            <option value="0407" >BSc0407</option>
+                                            <option value="0408">BSc0408</option>
+                                            <option value="0409">BSc0409</option>
+                                            <option value="0502">BSc0502</option>
+                                            <option value="0503/2">BSc0503/2</option>
+                                        </select>
+                                    </p>
+                                    <p>
+                                        <label>Start date</label>
+                                        <p>Date & Time</p>
+                                        <input type="date" name="date-start">
+                                        <input type="time" name="time-start">
+                                        <label>To</label>
+                                        <p>Date & Time</p>
+                                        <input type="date" name="date-end">
+                                        <input type="time" name="time-end">
+                                    </p>
+                                    <p class="message">
+                                        <label>Message</label>
+                                        <textarea rows="5" cols="30" name="message" id="message" placeholder="Let's Get Start.."
+                                            tabindex="4" required></textarea>
+                                    </p>
+                                    <p class="btn-submit">
+                                        <button type="submit">submit</button>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div> <!-- END site-pusher -->
+        </div> <!-- END site-container -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+
+
+
+        <script src="js/index.js"></script>
+
+
+
+
+    </body>
+
+</html>
