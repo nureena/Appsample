@@ -9,6 +9,7 @@
 
         <!-- <link rel="stylesheet" href="css/list.css"> -->
         <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
 
 
 
@@ -38,66 +39,64 @@
 
                 </header>
                 <div class="container">
-                        <div class="wrapper">
-                            <!-- <div class="company-info">
+                    <div class="wrapper">
+                        <!-- <div class="company-info">
                                 <h3>Reservation Form</h3>
                             </div> -->
-                            <div class="contact">
-                                <form method="POST">
-                                    <p>
-                                        <label>Student ID</label>
-                                        <input type="number" name="std-id" placeholder="student id..">
-                                    </p>
-                                    <p>
-                                        <label>Room</label>
-            
-                                        <!-- <input type="radio" name="room" value="0407">BSc0407
+                        <div class="contact">
+                            <form method="POST" id="form_input">
+                                <p>
+                                    <label>Student ID</label>
+                                    <input type="number" name="stdid" id="stdid" placeholder="student id.." required>
+                                </p>
+                                <p>
+                                    <label>Room</label>
+
+                                    <!-- <input type="radio" name="room" value="0407">BSc0407
                                         <input type="radio" name="room" value="0408">BSc0408
                                         <input type="radio" name="room" value="0409">BSc0409
                                         <input type="radio" name="room" value="0502">BSc0502
                                         <input type="radio" name="room" value="0503/2">BSc0503/2 -->
-                                        <select>
-                                            <option value="0407" >BSc0407</option>
-                                            <option value="0408">BSc0408</option>
-                                            <option value="0409">BSc0409</option>
-                                            <option value="0502">BSc0502</option>
-                                            <option value="0503/2">BSc0503/2</option>
-                                        </select>
-                                    </p>
-                                    <p>
-                                        <label>Start date</label>
-                                        <p>Date & Time</p>
-                                        <input type="date" name="date-start">
-                                        <input type="time" name="time-start">
-                                        <label>To</label>
-                                        <p>Date & Time</p>
-                                        <input type="date" name="date-end">
-                                        <input type="time" name="time-end">
-                                    </p>
-                                    <p class="message">
-                                        <label>Message</label>
-                                        <textarea rows="5" cols="30" name="message" id="message" placeholder="Let's Get Start.."
-                                            tabindex="4" required></textarea>
-                                    </p>
-                                    <p class="btn-submit">
-                                        <button type="submit">submit</button>
-                                    </p>
-                                </form>
-                            </div>
+                                    <select name="room_num" required>
+                                        <option value="0407">BSc0407</option>
+                                        <option value="0408">BSc0408</option>
+                                        <option value="0409">BSc0409</option>
+                                        <option value="0502">BSc0502</option>
+                                        <option value="0503/2">BSc0503/2</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    <label>Start date</label>
+                                    <p>Date & Time</p>
+                                    <input type="text" id="date_s" name="date_s" placeholder="Y/m/d" required>
+                                    <input type="text" id="time_s" name="time_s" placeholder="H:i" required>
+                                    <label>To</label>
+                                    <p>Date & Time</p>
+                                    <input type="text" id="date_e" name="date_e" placeholder="Y/m/d" required>
+                                    <input type="text" id="time_e" name="time_e" placeholder="H:i" required>
+                                </p>
+                                <p class="message">
+                                    <label>Message</label>
+                                    <textarea rows="5" cols="30" name="message" id="message" placeholder="Let's Get Start.."
+                                        tabindex="4" required></textarea>
+                                </p>
+                                <p class="btn-submit">
+                                    <button type="submit" id="btn-submit">submit</button>
+                                </p>
+                            </form>
                         </div>
                     </div>
-            
+                </div>
+
             </div> <!-- END site-pusher -->
         </div> <!-- END site-container -->
 
         <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
-
-
-
-        <script src="js/index.js"></script>
-
-
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.29.2/dist/sweetalert2.all.min.js"></script>
+        <script src="js/jquery.datetimepicker.full.min.js"></script>
+        <script src="js/form.js"></script>
 
 
     </body>

@@ -1,4 +1,11 @@
 $(document).ready(function() {
+
+
+    if(localStorage.getItem('login')){
+
+        window.location.replace("home.html");
+
+    }
 			
 	$("#btnSubmit").click(function() {
 		
@@ -12,8 +19,9 @@ $(document).ready(function() {
 
                 if(result[0] == "1"){
                     /// login สำเร็จ
+                    localStorage.setItem('login', JSON.stringify(result));
                     window.location.replace("home.html");
-                    alert(result);
+                    //alert(result);
                 }else{
                     /// login ไม่สำเร็จ 
                     $(".login-fail").removeClass("d-none");

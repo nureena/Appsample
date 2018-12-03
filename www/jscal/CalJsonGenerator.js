@@ -190,7 +190,7 @@ function compareDateTimes(dTempDate1, dTempDate2)
 	var iDateTimeDiff = (dTempDate1.getTime() - dTempDate2.getTime())/iMS.m;
 	return (iDateTimeDiff === 0) ? iDateTimeDiff: (iDateTimeDiff/Math.abs(iDateTimeDiff));
 }
-
+////////////////////////////////////// Event on calendar /////////////////////////////////////////////////////
 var oEventsTemplate = 
 [
 	//--------------------------------- Birthdays ------------------------------------------------------
